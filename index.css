@@ -1,0 +1,421 @@
+
+
+/*****************************  nevigation bar ****************************/
+.nevbar{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: flex;
+    background-color: transparent;
+}
+.logo{
+    width:45%;
+}
+.logo h1 {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+.logo image{
+    display: inline-block;
+}
+#image{
+    width: 20%;
+    display: inline-block;
+    margin: 20px 0px 0px 30px;
+    text-align: center;
+}
+#info{
+    display: inline-block;
+    margin-top: 28px;
+}
+#image img{
+  width: 80%;
+  height: 80%;
+}
+#image p{
+    color: white;
+    width: 100%;
+    font-weight: lighter;
+}
+
+#info p{
+    text-decoration: none;
+    color: white;
+}
+.logo h1 span{
+    color: #0a0a0a;
+}
+.menu{
+    flex: 1;
+    text-align: right;
+    margin-top: 28px;
+    margin-right: 100px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 18px;
+    transition: 0.5s;
+    font-weight: 500;
+    position: relative;
+}
+.menu ul li a:hover{
+    color: #0a0a0a;
+}
+.menu ul li a span{
+    color: #c3073f;
+}
+.menuicon{
+    margin: auto;
+    color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.menuicon i span {
+    font-weight: 600;
+}
+
+/* navbar mobile view */
+@media only screen and (max-width : 700px){
+    .nevbar{
+        background-color: black;
+    }
+    .logo a h1{
+        margin: 15px 12px;
+    }
+    .menu{
+        text-align: right;
+        margin-right: 0px;
+        position:absolute;
+        background-color: black;
+        width: 100%;
+        top: 49px;
+        max-height: 0px;
+        overflow: hidden;
+        box-shadow: 0px 10px 12px -1px rgb(0 0 0 / 10%);
+        transition: .5s;
+    }
+    .menu ul li{
+        list-style: none;
+        display: block;
+        margin: 25px 40px 35px auto;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+        margin-left: 0px;
+        font-size: 15px;
+        transition: 0.5s;
+        font-size: 18px;
+    }
+    .menuicon{
+        display: block;
+        margin-right: 30px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
+/**************  background cover image  ***************/
+.cover {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(50 141 143 / 57%),rgb(1 33 14 / 14%)) ,url(image/aaron-burden-xG8IQMqMITM-unsplash.jpg);
+    background-size: cover;
+    color: rgb(243, 235, 235);
+}
+
+.cover .information {
+    max-width: 1000px ;    
+    margin: 0 auto;
+    padding-top: 20%;
+    z-index: 1;
+}
+.information h3 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+.information h3 span {
+    float: right;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.information h2 {
+    font-size: 40px;
+}
+.information h1 span{
+    font-size: 110px;
+    line-height: 120px;
+    color: #0a0a0a;
+    letter-spacing: 10px;
+}
+@media only screen and (max-width : 700px ){
+
+    .cover .information {
+        align-items: center;
+        max-width: 1000px ;    
+        margin: 0 auto;
+        padding-top: 30%;
+    }
+    .information h3 {
+        font-size: 14px;
+        letter-spacing: 3px;
+        font-weight: 300;
+    }
+    .information h3 span {
+        float: none;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .information h2 {
+        font-size: 30px;
+    }
+    .information h1 span{
+        font-size: 70px;
+        line-height: 120px;
+        color: #292929;
+        letter-spacing: 10px;
+    }
+
+}
+
+
+/* *******************************   service  **************************************** */
+.service{
+    width: 100%;
+    display: flex;
+    background-color:#F8F9FA;
+    padding: 80px;
+}
+/* service content */
+.service .servicecontent {
+    width: 70%;
+    padding: 80px 10% 80px 10%;
+    color: white;
+    background-color: #090f1aad;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+}
+.servicecontent h5 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.servicecontent h1 {
+    font-weight: 600;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.servicecontent p {
+    padding-bottom: 30px;
+    line-height: 25px;
+    text-align: justify;
+}
+@media only screen and (max-width : 700px ) {
+
+    /* *******************************   service  **************************************** */
+    .service{
+        width: 100%;
+        display: block;
+        background-color:#F8F9FA;
+        padding: 0px;
+
+    }
+      /* service content */
+    .service .servicecontent {
+        width: 100%;
+        padding: 65px 4%;
+        box-sizing: border-box;
+    }
+    .servicecontent h5 {
+        margin-bottom: 10px;
+    }
+    .servicecontent h1 {
+        font-size: 30px;
+    }
+}
+/********our team************/
+.Team{
+    text-align: center;
+}
+.Team h2 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 10px;
+    color: #0a0a0a;
+    /* background: white; */
+    border: 2px solid #0a0a0a;
+    border-radius: 18px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+.serve{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container{
+    width: 350px;
+    /* height: 500px; */
+    border: 2px solid #0a0a0a;
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+    margin: 50px;
+    padding: 10px;
+}
+
+.container h4{
+    text-align: center;
+color: rgb(26 26 26 / 80%);
+background-color: #f8f9fa;
+margin-top: 0;
+border-radius: 8px;
+}
+/*****************************our story*******************************************************/
+.ourstory{
+    padding: 10px;
+    display: inline-block;
+    margin: 50px;
+    padding: 10px;
+}
+/***************core value********************************************************************/
+.cvalue{
+    
+    /* border-radius: 15px; */
+    padding: 10px;
+    display: inline-block;
+    margin: 50px;
+    padding: 10px;
+}
+.cvalue p{
+    margin: 50px;
+    padding: 10px;
+    text-align: justify;
+}
+/************************************** Contact **********************************************/
+.contact {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 125px 0;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6)) , url('image/jeshoots-com-pUAM5hPaCRI-unsplash.jpg');
+}
+.contact h1 {
+    color: white;
+    text-align: center;
+}
+.contactcontanner {
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.contactcontanner .contanner {
+    width: 30%;
+}
+.contactcontanner .contanner .heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    margin-bottom: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.07);
+}
+.heading .icon {
+    padding: 0 0 0 20px;
+    font-size: 20px;
+    color: rgb(48 141 77 / 57%) 
+}
+.heading .info {
+    width: 70%;
+    margin: 25px auto;
+    color: white;
+}
+.heading .info #contactinfo {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+/* message form */
+.messageform {
+    width: 70%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.07);
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.messageform .form {
+    width: 80%;
+    margin: 50px auto;
+}
+.messageform input , .messageform #inputbox {
+    width: 100%;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+}
+.messageform button {
+    padding: 10px 50px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    background: linear-gradient(to right , transparent 50% , rgb(48 141 77 / 57%) );
+    background-size: 200%;
+    background-position: left;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .3s;
+}
+.messageform button:hover {
+    background-position: right;
+}
+
+/* contact mobile view */ 
+@media only screen and (max-width : 700px) {
+    .contact {
+        padding: 50px 0;
+    }
+    .contactcontanner {
+        width: 95%;
+        display: block;
+    }
+    .contactcontanner .contanner {
+        width: 100%;
+    }
+    /* message form */
+    .messageform {
+        width: 100%;
+        margin-left: 0px;
+        padding: 1px 0;
+    }
+    .messageform .form {
+        width: 93%;
+        margin: 50px auto;
+    }
+}
+
+
